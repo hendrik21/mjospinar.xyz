@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang = "es">
+	<head>
+
+
+		<!--Favicon-->
+		<link  rel="icon" href="images/maquina_de_tatuar.webp" type="image/webp">
+
+		<!--estilos locales CSS-->
+		<link rel = "stylesheet" type = "text/css" href = "styles/styles.css">
+
+		<!--Bootstrap 5.0-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+		<!--JQuery-->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+		<!--GSAP 3-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+		<!-- MDB -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet"/>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+
+		<!--metadatos-->
+
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>mjospinar: Tatuajes</title>
+	</head>
+	<body>
+		<a name = "inicio"></a>
+		<header class = "encabezado">
+			<script src = "scripts/navbar.js"></script>
+		</header>
+		<section class = "main">
+			<div class = "container-fluid">
+				<div class = "row">
+					<div class = "col-sm-12 col-md-1 bg-secondary text-light text-center text-capitalize">
+						<ul class= "list-group list-group-flush">
+							<li class = "list-group-item bg-secondary">
+								<a href = "#todos" class = "text-white" onclick = "tatuajes_todos()">
+									<h5>todos</h5>
+								</a>
+							</li>
+							<li class = "list-group-item bg-secondary">
+								<a href = "#2021" class = "text-white" onclick = "tatuajes_2021()">
+									<h5>2021</h5>
+								</a>
+							</li>
+							<li class = "list-group-item bg-secondary">
+								<a href = "#2020" class = "text-white" onclick = "tatuajes_2020()">
+									<h5>2020</h5>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class = "col-sm-12 col-md-11 text-center text-capitalize">
+						<ul class= "list-group list-group-flush tatuajes_todos">
+							<li class = "list-group-item" id = "lista_tatuajes">
+								<a name = "todos">
+									<h3>tatuajes</h3>
+								</a>
+							</li>
+							<li class = "list-group-item tatuajes_2021" id = "lista_tatuajes">
+								<a name = "2021">
+									<h4>2021</h4>
+								</a>
+								<!--INICIO DE LA LISTA 2021-->
+								<div class = "row">
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "forza tatuaje blackwork" src = "images/2021/forza_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">Forza</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "osito malvado tatuaje blackwork" src = "images/2021/osito_malvado_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">Osito malvado</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "demonio chibi tatuaje blackwork" src = "images/2021/demonio_chibi_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">Demonio chibi</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "manopla tatuaje blackwork" src = "images/2021/manopla_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">Hope</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "mickey mouse tatuaje blackwork" src = "images/2021/mickey_mouse_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">Melted Mickey</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "mariposa tribal tatuaje blackwork" src = "images/2021/mariposa_tribal_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">Mariposa tribal</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "ojo tatuaje blackwork" src = "images/2021/ojo_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">Feel too much</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+  											<div class="carousel-indicators">
+    											<button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    											<button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  											</div>
+  											<div class="carousel-inner">
+    											<div class="carousel-item active">
+    												<div class = "d-md-block bg-image hover-overlay hover-zoom ripple">
+      													<img src="images/2021/kanjis_tatuaje_1.webp" class="d-block w-100" alt="kanjis tatuaje blackwork">
+      													<div class="mask d-none d-md-block">
+        													<h4 class = "text-white">kanjis (izquierda)</h5>
+														</div>
+													</div>
+    											</div>
+    											<div class="carousel-item">
+    												<div class = " bg-image hover-overlay hover-zoom ripple">
+      													<img src="images/2021/kanjis_tatuaje_2.webp" class="d-block w-100" alt="kanjis tatuaje blackwork">
+      													<div class="mask d-none d-md-block">
+        													<h4 class = "text-white">kanjis (derecha)</h5>
+      													</div>
+      												</div>
+    											</div>
+  											</div>
+  											<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+    											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    											<span class="visually-hidden">Previous</span>
+  											</button>
+  											<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+    											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    											<span class="visually-hidden">Next</span>
+  											</button>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "2002 tatuaje blackwork" src = "images/2021/2002_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">2002</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+  											<div class="carousel-indicators">
+    											<button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    											<button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  											</div>
+  											<div class="carousel-inner">
+    											<div class="carousel-item active">
+    												<div class = "d-md-block bg-image hover-overlay hover-zoom ripple">
+      													<img src="images/2021/rayos_tatuaje_1.webp" class="d-block w-100" alt="rayos tatuaje blackwork">
+      													<div class="mask d-none d-md-block">
+        													<h4 class = "text-white">Rayos (izquierda)</h5>
+														</div>
+													</div>
+    											</div>
+    											<div class="carousel-item">
+    												<div class = " bg-image hover-overlay hover-zoom ripple">
+      													<img src="images/2021/rayos_tatuaje_2.webp" class="d-block w-100" alt="rayos tatuaje blackwork">
+      													<div class="mask d-none d-md-block">
+        													<h4 class = "text-white">Rayos (derecha)</h5>
+      													</div>
+      												</div>
+    											</div>
+  											</div>
+  											<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+    											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    											<span class="visually-hidden">Previous</span>
+  											</button>
+  											<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+    											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    											<span class="visually-hidden">Next</span>
+  											</button>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "zorro tatuaje blackwork" src = "images/2021/zorro_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">Zorro</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "fantasma tatuaje blackwork" src = "images/2021/fantasma_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">Fantasma</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "mascara kitsune tatuaje blackwork" src = "images/2021/mascara_kitsune_tatuaje.webp">
+											<div class="mask d-none d-md-block" >
+												<h4 class = "text-white">Máscara kitsune</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "conejos tatuaje blackwork" src = "images/2021/conejos_tatuaje.webp">
+											<div class="mask d-none d-md-block">
+												<h4 class = "text-white">conejos</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block m-auto" alt = "flor tatuaje blackwork" src = "images/2021/flor_tatuaje.webp">
+											<div class="mask d-none d-md-block">
+												<h4 class = "text-white">flor</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "kick buttowski tatuaje blackwork" src = "images/2021/kick_buttowski_tatuaje.webp">
+											<div class="mask d-none d-md-block">
+												<h4 class = "text-white">kick buttowski</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block m-auto" alt = "alien tatuaje blackwork" src = "images/2021/alien_tatuaje.webp">
+											<div class="mask d-none d-md-block">
+												<h4 class = "text-white">alien</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "medusa tatuaje blackwork" src = "images/2021/medusa_tatuaje.webp">
+											<div class="mask d-none d-md-block">
+												<h4 class = "text-white">medusa</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block m-auto" alt = "eva 01 tatuaje blackwork" src = "images/2021/eva_01_tatuaje.webp">
+											<div class="mask d-none d-md-block">
+												<h4 class = "text-white">EVA-01</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "caras tatuaje blackwork" src = "images/2021/caras_tatuaje.webp">
+											<div class="mask d-none d-md-block">
+												<h4 class = "text-white">caras</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block m-auto" alt = "abanico japones tatuaje blackwork" src = "images/2021/abanico_japones_tatuaje.webp">
+											<div class="mask d-none d-md-block">
+												<h4 class = "text-white">abanico japonés</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+								</div>
+							</li>
+							<li class = "list-group-item tatuajes_2020" id = "lista_tatuajes">
+								<a name = "2020">
+									<h4>2020</h4>
+								</a>
+								<!--INICIO DE LA LISTA 2020-->
+								<div class = "row">
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block" alt = "tomie tatuaje blackwork" src = "images/2020/tomie_tatuaje.webp">
+											<div class="mask d-none d-md-block">
+												<h4 class = "text-white">tomie</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class = "col-sm-12 col-md-4">
+										<div class = "bg-image hover-overlay hover-zoom ripple">
+											<img class = "w-100 mx-auto d-block m-auto" alt = "mariposa tatuaje blackwork" src = "images/2020/mariposa_tatuaje.webp">
+											<div class="mask d-none d-md-block">
+												<h4 class = "text-white">mariposa</h4>
+											</div>
+										</div>
+										<br>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class = "bg-image hover-zoom ripple">
+							<a href = "#inicio" onclick = "tatuajes_todos()">
+								<img id = "ancla_general" src = "images/ancla.webp">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class = "bg-dark pie_de_pagina">
+			<script src = "scripts/footer.js"></script>
+		</footer>
+	</body>
+	<script src = "scripts/animations.js"></script>
+</html>

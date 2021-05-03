@@ -1,0 +1,167 @@
+/*HOJA DE ESTILOS CSS, RECUERDA MANEJAR EL ORDEN DE DEFINIR
+LOS ESTILOS DE ARRIBA HACIA ABAJO, OBEDECIENDO EL LAYOUT*/
+
+
+/*REGLAS AT*/
+
+/*añadir fuente "Adega serif"*/
+
+@font-face {
+
+	font-family: "Adega serif";
+	src:url("adega_serif.otf");
+}
+
+/*añadir fuente "Serifsy"*/
+
+@font-face {
+
+	font-family: "Serifsy";
+	src:url("serifsy.ttf");
+}
+
+/*ESTILOS*/
+
+/*Estilos universales*/
+
+* {
+
+	font-family: "Adega serif";
+}
+
+a {
+
+	text-decoration-line: none;
+}
+
+/*Estilos del objeto que importa la barra*/
+
+#barra {
+
+	display: block;
+	width: 100%;
+}
+
+/*Estilos del brand*/
+
+.navbar-brand {
+
+	font-family: "Serifsy";
+}
+
+/*Estilos de las demás secciones del header*/
+
+.navbar-nav > li {     
+
+	font-family: "Adega serif";
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+/*Estilos del cuerpo principal del sitio web*/
+
+.main, #lista_tatuajes {
+
+	background-color: #FAEDE9;
+}
+
+/*Estilos de la lista de fechas*/
+
+.list-group-item, .bg-secondary > .text-white {
+
+	text-decoration-line: none;
+}
+
+/*Estilos de la máscara de color de las imágenes*/
+
+.mask {
+
+	background: linear-gradient(45deg,rgba(31, 234, 31, 0.5), rgba(178, 60, 253, 0.5) 100%);
+}
+
+/*Estilos de los titulos de cada tatuaje*/
+
+.bg-image > .mask > h4 {
+
+	display: inline-block;
+	position: relative;
+	top: 5%;
+}
+
+/*Estilos del ancla general*/
+
+#ancla_general {
+
+	display: block;
+	position: fixed;
+	right: 3%;
+	bottom: 5%;
+	width: 5%;
+	opacity: 0.65;
+}
+
+#ancla_general:hover {
+
+	opacity: 1;
+}
+  
+/*Estilos del pie de página*/
+
+footer {
+
+	background-color: #E0E0E0;
+}
+  
+/*Estilo de la cita de pie de página*/
+
+#cita {
+
+	position: relative;
+	top: 25%;
+}
+
+/*Estilos de los iconos de redes sociales*/
+
+
+.red_social {
+
+	width: 5%;
+	position: relative;
+	float: right;
+}
+
+.red_social_r {
+
+	width: 5%;
+}
+
+/*ESTILOS DE LA PÁGINA PRINCIPAL*/
+
+/*Estilos de la foto de perfil y del carrusel*/
+
+.foto_perfil, .fondo_carrusel {
+
+	background-color: #faede9;
+
+}
+
+.perfil {
+
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: center
+
+}
+
+/*Estilo de frase publicitaria*/
+
+.frase_1 {
+
+	background-color: #6c757d;
+}
+
+.link_tatuajes {
+
+	text-decoration-line: none;
+}
